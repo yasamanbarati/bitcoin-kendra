@@ -1,0 +1,305 @@
+body{
+    direction: ltr;
+    background: var(--farst-color);
+}
+:root{
+    --farst-color: #0a162d;
+    --secand-color:#c8daf4;
+    --therd-color: #ebd07d;
+    --fourth-color: #3bbfb5;
+    --fifth-color: #3d39cb;
+}
+/* headeer navbar */
+.header-main{
+    height: 200%;
+    width: 100%;
+    display: block;
+    background-image: url(../img/header/hero-bg\ -\ watchlist.png);
+    background-size: cover;
+    background-color: #f3f7f900;
+    background-position: right top;
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: -99;
+}
+.navbar-nav{
+    margin-right: 0;
+    margin-left: auto;
+}
+.navbar-nav .nav-item{
+    position: relative;
+    margin: 0 10px;
+    word-wrap: break-word;
+}
+.navbar-nav .nav-item a::after{
+    transition: 0.7s ease;
+    content: "";
+    width: 0%;
+}
+.navbar-nav .nav-item:hover a::after{
+    position: absolute;
+    content: "";
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 32px;
+    right: 0;
+    height: 0.5px;
+    border-radius: 5px;
+    background-color: var(--farst-color);
+}
+.navbar-nav .nav-item:nth-child(2) a::after{
+    display: none;
+}
+.navbar-nav .nav-item:nth-child(3) a::after{
+    position: absolute;
+    content: "";
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 32px;
+    right: 0;
+    height: 0.5px;
+    border-radius: 5px;
+    background-color: var(--farst-color);
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--farst-color);
+}
+.navbar-icon,
+.navbar-icon:hover{
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--farst-color);
+    text-decoration: none;
+}
+.headerIcon{
+    display: block;
+    cursor: pointer;
+}
+.line1,
+.line2,
+.line3{
+    height: 6px;
+    width: 50px;
+    margin-top: 4px;
+    background-color: var(--farst-color);
+    border-radius: 5px;
+}
+/* header search box */
+.header-search-box form {
+    background: #0000002b;
+}
+.header-search-box form input,
+.header-search-box form button{
+    background-color: rgb(13 110 253 / 0%);
+    color: rgb(0 0 0 / 20%);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.bi-search::before {
+    content: "\f502";
+    color: var(--farst-color);
+}
+.header-search-box form input{
+  border: hidden;
+  border-radius: 0;  
+  width: 100%;
+  height: 100%;
+  background: #f0f8ff00;
+}
+.header-search-box form button {
+    border-radius: 0;  
+    border-left: 1px 
+    var(--farst-color) solid;
+    background: #f0f8ff00;
+}
+.header-search-box {
+    position: relative;
+}
+.accordion-button::after{
+    display: none;
+}
+.button.accordion-button.collapsed {
+    padding: 0;
+}
+.accordion-body {
+    padding: 0;
+    position: absolute;
+    right: -5p;
+    top: 2px;
+}
+.accordion-header {
+    margin-bottom: 0;
+}
+div#flush-collapseOne {
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    width: 253px;
+    height: 51px;
+}
+.col-md-1 {
+    flex: 0;
+    width: 6%;
+    height: 6mm;
+}
+button.accordion-button.collapsed {
+    padding: 0;
+}
+button.accordion-button {
+    padding: 0;
+}
+button.accordion-button.collapsed {
+    background-color: #f0f8ff00;;
+}
+/* Market Cap */
+.market-cap {
+    margin-top: 150px;
+}
+.market-cap-title{
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.market-cap-title-img{
+    width: 30px;
+    height: 30px;
+}
+.card {
+    word-wrap: normal;
+    background-color: var(--secand-color);
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 5px 0px 6px #212529, 0px 0px 4px 0px #142645, 4px 1px 7px #21252a;
+    color:  var(--farst-color);
+}
+.single-table-part {
+    position: relative;
+    z-index: 1;
+    padding: 12px 15px;
+    background-color:  var(--secand-color);
+    margin-bottom: 2px;
+    color: var(--farst-color);
+}
+.table-part-value span{
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.table-part-value p{
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.table-part-value img{
+    width: 40px;
+    height: 40px;
+}
+.single-table-part {
+    position: relative;
+    z-index: 1;
+    padding: 12px 15px;
+    background-color: transparent;
+    margin-bottom: 0.5px;
+    color:  var(--farst-color);
+}
+.card-body .descent p{
+    margin-bottom: 0;
+}
+.card-body .rise p{
+    margin-bottom: 0;
+}
+/* table */
+.filte-tabel{
+    margin-top: 50px;
+}
+.filte-tabel .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-chart{
+    width: 85%;
+    color:  var(--farst-color);
+    --bs-table-bg: var(--secand-color);
+    --bs-table-striped-bg: #213f6f;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg:  var(--secand-color);
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #213f6f;
+    --bs-table-hover-color: #fff;
+    border: 1px #213f6f solid;
+    border-radius: 10px;
+    box-shadow: 5px 0px 6px #212529, 0px 0px 4px 0px #142645, 4px 1px 7px #21252a;
+}
+td.img-chart {
+    width: 40px;
+}
+.img-chart img{
+    width: 100%
+}
+.card-body .rise,
+.rise{
+    font-weight: 700;
+    color: green;
+    font-size: 15px;
+}
+.card-body .descent,
+.descent{
+    font-weight: 700;
+    color: red;
+    font-size: 15px;   
+}
+td.chart-element {
+    width: 150px;
+}
+td.rise,
+td.descent{
+    width: 80px;
+}
+.filte-tabel .container.filter-option{
+    width: 79%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:  var(--secand-color);
+    font-weight: 600;
+    font-size: 16px;
+    background: var(--farst-color)17;
+}
+.filter-rows.d-flex {
+    justify-content: center;
+    align-items: baseline;
+}
+.filter-row-option select{
+    background: transparent;
+    border: none;
+    margin-left: 7px;
+    color: #c4d8f4;
+}
+.filter-table{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 17px;
+}
+.filter-row-option select option{
+    background-color: var(--farst-color);
+}
+.filter-control{
+    color:  var(--secand-color);
+    font-weight: 600;
+}
