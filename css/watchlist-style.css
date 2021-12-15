@@ -303,3 +303,272 @@ td.descent{
     color:  var(--secand-color);
     font-weight: 600;
 }
+
+/* footer */
+footer::after {
+    content: "";
+    background-color: rgb(10 22 45 / 86%);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-image: url(img/calculator/bg-2.jpg);
+    position: relative;
+    z-index: 1;
+    background-attachment: local;
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 50px;
+}
+a.footer-icon {
+    font-size: 30px;
+    font-weight: 900;
+    color:  var(--secand-color);
+    text-decoration: none;
+}
+p.footer-info {
+    font-size: 15px;
+    font-weight: 400;
+    color:  var(--secand-color);
+    margin-top: 20px;
+}
+.footer-social-info a{
+    color:  var(--secand-color);
+    margin: 16px;
+    font-size: 25px;
+}
+.footer-link-title h4{
+    color:  var(--secand-color);
+    font-weight: 700;
+}
+a.nav-link {
+    color:  var(--secand-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+.form-control {
+    color: #0b182e;
+    background-color: #c8daf3;
+    border: 1px solid #b4cbe4;
+}
+.form-massage-eror{
+    color: transparent;
+}
+.contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+.contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+.contact .php-email-form button[type="submit"] {
+    background: #3498db;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+.send-button button{
+    background-color: #c8daf3;
+    width: 172px;
+    height: 45px;
+    border-radius: 16px;
+}
+
+.value-box{
+    background-color:  var(--secand-color);
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+.value-box-header{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.overview-box,
+.update-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.overview-box{
+    position: relative;
+    font-weight: 900;
+    font-size: 20px;
+    color: #172b4d;
+}
+.overview-box::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #172b4d;
+    position: absolute;
+    top: 17px;
+    right: -43px
+}
+.overview-box::before{
+    content: "";
+    width: 40px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #172b4d;
+    position: absolute;
+    top: 17px;
+    left: -43px;
+}
+.update-box{
+    font-weight: 400;
+    font-size: 14px;
+    color: #172b4d;
+}
+.value-box-chart{
+    width: 85%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+.value-box-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px auto;
+    padding: 0 100px;
+}
+.value-info-shop .value-shop,
+.value-info-sales .value-sales{
+    width: 200px;
+    display: flex;
+/*    justify-content: space-between;*/
+    align-items: baseline;
+    font-weight: 700;
+    font-size: 15px;
+    color: #172b4d;
+}
+.value-info-shop .value-shop
+{
+    margin: 0 30px 0 0;
+}
+.value-info-shop .value-shop p:last-child{
+    color: #198754;
+    font-weight: 800;
+}
+.value-info-sales .value-sales p:last-child{
+    color: #e81616;
+    font-weight: 800;
+}
+.chart-box-inner{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.value{
+    background-color:  var(--secand-color);
+    height: auto;
+    width: 95%;
+}
+.chart{
+    background-color:  var(--secand-color);
+    margin-left: 10px;
+    height: auto;
+}
+.chart-body{
+    height: 100%;
+    font-weight: 600;
+    font-size: 16px;
+}
+.data-time{
+    border-top: 1px black solid;
+    font-size: 15px;
+    font-weight: 600;
+}
+.chart{
+    position: relative;
+    display: none;
+}
+.box-inner-chart{
+    position: absolute;
+    height: 100%;
+}
+.chart-box-img img{
+    width: 104%;
+    height: 303px;
+}
+.box-inner-chart .box-chart{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    top: -311px;
+    left: 107px;
+    height: 100%;
+}
+.box-inner-chart .box-chart .progress-bar:nth-child(4){
+    margin-right: 60px;
+}
+.box-inner-chart .box-chart .progress-bar:nth-child(3){
+    margin-right: 50px;
+}
+.box-inner-chart .box-chart .progress-bar:nth-child(2){
+    margin-right: 60px;
+}
+.box-inner-chart .box-chart .progress-bar:nth-child(1){
+    margin-right: 55px;
+}
+.chart-org-img img{
+        width: 100%;
+    margin-top: 30px;
+}
+.table-chart{
+    width: 100%;
+    color:  var(--secand-color);
+    --bs-table-bg: #08101f;
+    --bs-table-striped-bg: #213f6f;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg:  var(--secand-color);
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #213f6f;
+    --bs-table-hover-color: #fff;
+    border: 1px #213f6f solid;
+    border-radius: 10px;
+}
