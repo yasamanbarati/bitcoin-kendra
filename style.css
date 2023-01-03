@@ -15,10 +15,11 @@ header{
     top: 0;
     z-index: 99;
     }
-.header-main{
+.head-main{
+    height: 540px;
     width: 100%;
     display: block;
-    background-image: url(../img/header/hero-bg.png);
+    background-image: url(img/header/hero-bg.png);
     background-size: cover;
     background-color: #f3f7f900;
     background-position: right top;
@@ -158,62 +159,21 @@ header{
 .main-information {
    
     margin-top: 162px;
-    width: auto;
-    height: auto;
+    width: 400px;
+    height: 300px;
     margin-right: auto;
-}
-.main-informtion.container {
-    height: auto;
-    background-color: #0a162d36;
 }
 .main-information h2{
     padding: 20px 0;
     color:  var(--secand-color);
     font-weight: 900;
     font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.link-start {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    margin-top: 70px;
-    right: 40%;
-}
-.get-start {
-    background-color: #ffffff;
-    border: 3px #fb6f00 solid;
-    border-radius: 7px;
-    color: #0a162d;
-    font-weight: 600;
-    font-size: 16px;
-}
-.learn-more {
-    background-color: #fb6f00;
-    color: #c8daf4;
-    border: 1px #c8daf4 solid;
-    border-radius: 7px;
-    font-weight: 600;
-    font-size: 16px;
 }
 .main-information p{
+    padding: 10px 0;
     color:  var(--secand-color);
     font-weight: 500;
     font-size: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .main-img{
     margin-top: 70px;
@@ -254,53 +214,9 @@ header{
     justify-content: center;
     align-items: center;
 }
-/* table */
-.filte-tabel{
-    margin-top: 50px;
-}
-.filte-tabel .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.table-chart{
-    width: 85%;
-    color:  var(--secand-color);
-    --bs-table-bg: #08101f;
-    --bs-table-striped-bg: #213f6f;
-    --bs-table-striped-color: #fff;
-    --bs-table-active-bg:  var(--secand-color);
-    --bs-table-active-color: #fff;
-    --bs-table-hover-bg: #213f6f;
-    --bs-table-hover-color: #fff;
-    border: 1px #213f6f solid;
-    border-radius: 10px;
-    box-shadow: 5px 0px 6px #212529, 0px 0px 4px 0px #142645, 4px 1px 7px #21252a;
-}
-td.img-chart {
-    width: 200px;
-    height: 80px;
-}
-.img-chart img{
-    width: 100%;
-}
-.card-body .rise,
-.rise{
-    font-weight: 700;
-    color: green;
-    font-size: 15px;
-}
-.card-body .descent,
-.descent{
-    font-weight: 700;
-    color: red;
-    font-size: 15px;   
-}
 /* about bitcoin box */
 .about{
     position: relative;
-    margin-top: 42%;
 }
 .about-inner{
     display: flex;
@@ -913,7 +829,7 @@ a.nav-link {
     margin-top: 30px;
 }
 .table-chart{
-    width: 100%;
+    width: 102%;
     color:  var(--secand-color);
     --bs-table-bg: #08101f;
     --bs-table-striped-bg: #213f6f;
@@ -924,4 +840,14 @@ a.nav-link {
     --bs-table-hover-color: #fff;
     border: 1px #213f6f solid;
     border-radius: 10px;
+    box-shadow: -1px -12px 6px #212529, 0px 0px 20px 0px #142645, 4px -11px 07px #21252a;
+}
+.img-chart img{
+    width: 20%
+}
+.profile-img{
+    
+}
+table.table.table-dark.table-chart{
+    width: 100%;
 }
